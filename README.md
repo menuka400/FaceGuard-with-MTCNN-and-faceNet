@@ -173,6 +173,7 @@ $$
 🎯 Larger distance → Less similar faces.
 
 🎯 A common threshold for recognition is d < 0.8 (lower is better).
+
 ---
 
 ## 📜 License
