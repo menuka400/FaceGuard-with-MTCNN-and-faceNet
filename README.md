@@ -31,11 +31,6 @@ This project implements a face detection and recognition system using **MTCNN** 
 3️⃣ Extract a **512-dimensional embedding** using **FaceNet**. 🧠
 4️⃣ Compare the extracted embedding with stored embeddings in the database.📊
 5️⃣ If the similarity is above the threshold, the person is recognized; otherwise, access is denied.❌
-
-### 📌Flowchart
-
-*(Flowchart will be provided separately.)*
-
 ---
 
 ## 📌Installation
