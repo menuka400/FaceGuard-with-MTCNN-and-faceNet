@@ -1,0 +1,8 @@
+opencv-python
+numpy
+pillow
+torch
+torchvision
+facenet-pytorch
+psycopg2
+tabulate
