@@ -100,7 +100,7 @@ Mapping high-dimensional data (like images) into low-dimensional representations
 - **Sliding Window**: A fixed-size window moves over the image to detect objects.
 
 ### 4. **Face Embeddings & Similarity Calculation**
-Each registered face is represented as a vector. The system calculates similarity using **cosine similarity** or **Euclidean distance**.
+Each registered face is represented as a vector. The system calculates similarity using **Euclidean distance**.
 
 - **Euclidean Distance Formula:**
   \[ d(A, B) = \sqrt{\sum_{i=1}^{N} (A_i - B_i)^2} \]
