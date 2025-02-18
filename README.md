@@ -168,14 +168,12 @@ $$
 - Smaller distance → More similar faces.
 - Larger distance → Less similar faces.
 - A common threshold for recognition is d < 0.8 (lower is better).
-
-## Future Enhancements
-- **Optimize for edge devices using quantization**
-- **Enhance recognition under poor lighting conditions**
-- **Implement multi-face recognition**
-
 ---
 
 ## License
 This project is licensed under the MIT License.
 
+---
+Made with ❤️ by **M.H. Jayasuriya**
+
+🌟 **Star this repository if you found it useful!** 🌟
