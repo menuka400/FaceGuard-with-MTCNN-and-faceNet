@@ -84,6 +84,9 @@ MTCNN is a three-stage deep learning-based face detector:
 - **R-Net (Refinement Network)**: Refines the detected regions.
 - **O-Net (Output Network)**: Outputs precise bounding boxes and facial landmarks.
 
+![image](https://github.com/user-attachments/assets/ef7255b5-f325-486b-a284-043b81f3a6ff)
+
+
 ### 2. **FaceNet**
 FaceNet generates **face embeddings**, which are unique numerical representations of faces. It uses **InceptionResNetV1** to extract a **512-dimensional feature vector** for each face.
 
