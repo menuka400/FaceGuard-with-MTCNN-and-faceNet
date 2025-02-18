@@ -92,7 +92,7 @@ FaceNet takes an image of the person’s face as input and outputs a vector of 1
 
 Mapping high-dimensional data (like images) into low-dimensional representations (embeddings) has become a fairly common practice in machine learning these days.
 
-![image](https://github.com/user-attachments/assets/e3e4e3e8-616c-4c29-9ba5-fdd01405200a)
+![image](https://github.com/user-attachments/assets/bfd1e130-a1b3-463b-8c2d-a49e0291eec9)
 
 
 ### 3. **Image Pyramid & Sliding Window in Face Detection**
