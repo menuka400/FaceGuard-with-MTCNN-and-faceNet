@@ -143,7 +143,31 @@ Face embeddings are numerical representations of facial features extracted from 
   - Different faces have embeddings that are far apart from each other.
 
   ### II. **What Are Face Embeddings?**
----
+
+   ### a. **Face Detection (MTCNN)**
+   - A face is first detected using MTCNN (Multi-task Cascaded Convolutional Networks).
+   - The face is aligned and cropped to a fixed size (e.g., 160x160 pixels).
+
+   ### b. **Feature Extraction (FaceNet)**
+   - The aligned face is passed through FaceNet, a deep CNN model.
+   - The model generates a 512-dimensional embedding vector, which represents the facial features.
+
+   ### c. **Storing the Embedding**
+   - The embedding is stored in a database for future comparison.
+
+  ### III. **Face Similarity Calculation**
+To recognize a person, a new face embedding is generated and compared with stored embeddings. The similarity is computed using **distance metrics**.
+
+**Euclidean Distance**
+- The Euclidean distance measures how far two embeddings are from each other in a straight line.
+  
+$$
+d(A, B) = \sqrt{\sum (A_i - B_i)^2}
+$$
+
+- Smaller distance → More similar faces.
+- Larger distance → Less similar faces.
+- A common threshold for recognition is d < 0.8 (lower is better).
 
 ## Future Enhancements
 - **Optimize for edge devices using quantization**
