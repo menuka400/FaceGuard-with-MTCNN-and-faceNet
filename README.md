@@ -42,8 +42,11 @@ This project implements a face detection and recognition system using **MTCNN** 
 
 ### 📌Prerequisites
 Ensure you have the following installed:
+
 🔹 Python 3.8+
+
 🔹 PostgreSQL
+
 🔹 Required Python libraries:
 
 ```bash
