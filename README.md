@@ -96,11 +96,14 @@ Mapping high-dimensional data (like images) into low-dimensional representations
 
 
 ### 3. **Image Pyramid & Sliding Window in Face Detection**
-- **Image Pyramid**: An image pyramid is a collection of images - all arising from a single original image - that are successively downsampled until some desired stopping point is reached.
+
+- **Image Pyramid**: Image Pyramids are one of the most beautiful concept of image processing.Normally, we work with images with default resolution but many times we need to change the resolution (lower it) or resize the original image in that case image pyramids comes handy.
+
+The pyrUp() function increases the size to double of its original size and pyrDown() function decreases the size to half. If we keep the original image as a base image and go on applying pyrDown function on it and keep the images in a vertical stack, it will look like a pyramid. The same is true for upscaling the original image by pyrUp function.Once we scale down and if we rescale it to the original size, we lose some information and the resolution of the new image is much lower than the original one.
   
 ![image](https://github.com/user-attachments/assets/cd819829-2e15-42a6-b46e-8b75546ca4f9)
 
-- **Sliding Window**: a technique where a rectangular region of fixed size is systematically moved across an image, with each window being analyzed by a classifier to determine if it contains a face.
+- **Sliding Window**: A sliding window is a rectangular region that shifts around the whole image(pixel-by-pixel) at each scale. Each time the window shifts, the window region is applied to the classifier and detects whether that region has Haar features of a face.
 
 ![sliding_window_example](https://github.com/user-attachments/assets/aaf098b9-c3b4-4e9b-8889-9c3d7e6f0281)
 
