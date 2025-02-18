@@ -96,8 +96,13 @@ Mapping high-dimensional data (like images) into low-dimensional representations
 
 
 ### 3. **Image Pyramid & Sliding Window in Face Detection**
-- **Image Pyramid**: Rescales the image to different sizes to detect faces at different scales.
-- **Sliding Window**: A fixed-size window moves over the image to detect objects.
+- **Image Pyramid**: An image pyramid is a collection of images - all arising from a single original image - that are successively downsampled until some desired stopping point is reached.
+  
+![image](https://github.com/user-attachments/assets/cd819829-2e15-42a6-b46e-8b75546ca4f9)
+
+- **Sliding Window**: a technique where a rectangular region of fixed size is systematically moved across an image, with each window being analyzed by a classifier to determine if it contains a face.
+
+https://pyimagesearch.com/wp-content/uploads/2014/10/sliding_window_example.gif
 
 ### 4. **Face Embeddings & Similarity Calculation**
 Each registered face is represented as a vector. The system calculates similarity using **Euclidean distance**.
