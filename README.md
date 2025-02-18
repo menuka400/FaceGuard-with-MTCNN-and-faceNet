@@ -161,6 +161,7 @@ This is what the sliding window combined with the image pyramid looks like. By t
 📌 To recognize a person, a new face embedding is generated and compared with stored embeddings. The similarity is computed using **distance metrics**.
 
 **📏 Euclidean Distance Formula 📏**
+
 📌 The Euclidean distance measures how far two embeddings are from each other in a straight line.
   
 $$
