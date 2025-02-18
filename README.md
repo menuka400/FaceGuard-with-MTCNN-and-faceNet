@@ -88,7 +88,12 @@ MTCNN is a three-stage deep learning-based face detector:
 
 
 ### 2. **FaceNet**
-FaceNet generates **face embeddings**, which are unique numerical representations of faces. It uses **InceptionResNetV1** to extract a **512-dimensional feature vector** for each face.
+FaceNet takes an image of the person’s face as input and outputs a vector of 128 numbers which represent the most important features of a face. In machine learning, this vector is called embedding. Why embedding? Because all the important information from an image is embedded into this vector. Basically, FaceNet takes a person’s face and compresses it into a vector of 128 numbers. Ideally, embeddings of similar faces are also similar.
+
+Mapping high-dimensional data (like images) into low-dimensional representations (embeddings) has become a fairly common practice in machine learning these days.
+
+![image](https://github.com/user-attachments/assets/e3e4e3e8-616c-4c29-9ba5-fdd01405200a)
+
 
 ### 3. **Image Pyramid & Sliding Window in Face Detection**
 - **Image Pyramid**: Rescales the image to different sizes to detect faces at different scales.
