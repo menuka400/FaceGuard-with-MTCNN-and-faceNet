@@ -103,6 +103,8 @@ Mapping high-dimensional data (like images) into low-dimensional representations
 
 - **Sliding Window**: A sliding window is a rectangular region that shifts around the whole image(pixel-by-pixel) at each scale. Each time the window shifts, the window region is applied to the classifier and detects whether that region has Haar features of a face.
 
+This is what the sliding window combined with the image pyramid looks like. By this, we can detect face at different scales and locations of an image.
+
 ![sliding_window_example](https://github.com/user-attachments/assets/aaf098b9-c3b4-4e9b-8889-9c3d7e6f0281)
 
 
