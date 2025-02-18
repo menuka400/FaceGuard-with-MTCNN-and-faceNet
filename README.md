@@ -72,11 +72,15 @@ To find your `<SERVICE_URI>` Look [Setup & Installation](https://github.com/menu
 python face_recognition.py
 ```
 1️⃣ Choose the **Create New User** option.
+
 2️⃣ Enter a unique ID.
+
 3️⃣ Capture three samples of your face.📸
 
 ### 🔍Recognize a Face
+
 1️⃣ Choose the **Start Face Recognition** option.
+
 2️⃣ The system will detect and identify the user.
 
 ---
