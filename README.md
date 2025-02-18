@@ -57,6 +57,8 @@ Run the script to initialize the database:
 ```bash
 python face_recognition.py
 ```
+### SERVICE_URI
+To find your `<SERVICE_URI>` [Look here](https://github.com/menuka400/face-recognition-system-using-aiven-PostgreSQL)
 
 ---
 
