@@ -169,7 +169,9 @@ d(A, B) = \sqrt{\sum (A_i - B_i)^2}
 $$
 
 🎯 Smaller distance → More similar faces.
+
 🎯 Larger distance → Less similar faces.
+
 🎯 A common threshold for recognition is d < 0.8 (lower is better).
 ---
 
