@@ -104,6 +104,7 @@ This stage is similar to the R-Net, but this Output Network aims to describe the
 
 ![image](https://github.com/user-attachments/assets/c49dbf1f-15c6-41df-ab21-6dca2928665f)
 
+**MTCNN Full Architecture**
 
 ![image](https://github.com/user-attachments/assets/ef7255b5-f325-486b-a284-043b81f3a6ff)
 
