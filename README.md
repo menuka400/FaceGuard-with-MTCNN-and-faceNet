@@ -27,9 +27,13 @@ This project implements a face detection and recognition system using **MTCNN** 
 ## 🔄 System Workflow
 
 1️⃣ Capture a face from the webcam. 🎥
+
 2️⃣ Use **MTCNN** to detect the face.🔍
+
 3️⃣ Extract a **512-dimensional embedding** using **FaceNet**. 🧠
+
 4️⃣ Compare the extracted embedding with stored embeddings in the database.📊
+
 5️⃣ If the similarity is above the threshold, the person is recognized; otherwise, access is denied.❌
 
 ---
