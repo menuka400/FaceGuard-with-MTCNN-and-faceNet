@@ -102,7 +102,8 @@ Mapping high-dimensional data (like images) into low-dimensional representations
 
 - **Sliding Window**: a technique where a rectangular region of fixed size is systematically moved across an image, with each window being analyzed by a classifier to determine if it contains a face.
 
-![sliding_window_example](https://github.com/user-attachments/assets/184bec42-abc8-4be6-9edd-6b9fa57dc553)
+![sliding_window_example](https://github.com/user-attachments/assets/aaf098b9-c3b4-4e9b-8889-9c3d7e6f0281)
+
 
 ### 4. **Face Embeddings & Similarity Calculation**
 Each registered face is represented as a vector. The system calculates similarity using **Euclidean distance**.
