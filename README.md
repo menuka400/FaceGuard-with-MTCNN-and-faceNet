@@ -80,9 +80,30 @@ python face_recognition.py
 
 ### 1. **MTCNN (Multi-Task Cascaded Convolutional Networks)**
 MTCNN is a three-stage deep learning-based face detector:
-- **P-Net (Proposal Network)**: Generates candidate face regions.
-- **R-Net (Refinement Network)**: Refines the detected regions.
-- **O-Net (Output Network)**: Outputs precise bounding boxes and facial landmarks.
+- **P-Net (Proposal Network)**
+
+This first stage is a fully convolutional network (FCN). The difference between a CNN and a FCN is that a fully convolutional network does not use a dense layer as part of the architechture. This Proposal Network is used to obtain candidate windows and their bounding box regression vectors.
+
+Bounding box regression is a popular technique to predict the localization of boxes when the goal is detecting an object of some pre-defined class, in this case faces. After obtaining the bounding box vectors, some refinement is done to combine overlapping regions. The final output of this stage is all candidate windows after refinement to downsize the volume of candidates.
+
+![image](https://github.com/user-attachments/assets/9c76d9d1-7244-4690-b94d-4a35f9a94c1d)
+
+
+- **R-Net (Refinement Network)**
+
+All candidates from the P-Net are fed into the Refine Network. Notice that this network is a CNN, not a FCN like the one before since there is a dense layer at the last stage of the network architecture. The R-Net further reduces the number of candidates, performs calibration with bounding box regression and employs non-maximum suppression (NMS) to merge overlapping candidates.
+
+The R-Net outputs wether the input is a face or not, a 4 element vector which is the bounding box for the face, and a 10 element vector for facial landmark localization.
+
+
+![image](https://github.com/user-attachments/assets/21860059-6336-498f-9039-8d21db09081e)
+
+- **O-Net (Output Network)**
+
+This stage is similar to the R-Net, but this Output Network aims to describe the face in more detail and output the five facial landmarks’ positions for eyes, nose and mouth.
+
+![image](https://github.com/user-attachments/assets/c49dbf1f-15c6-41df-ab21-6dca2928665f)
+
 
 ![image](https://github.com/user-attachments/assets/ef7255b5-f325-486b-a284-043b81f3a6ff)
 
