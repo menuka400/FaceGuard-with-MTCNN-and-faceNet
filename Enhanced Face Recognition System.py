@@ -9,7 +9,7 @@ from facenet_pytorch import MTCNN, InceptionResnetV1
 from torchvision import transforms
 
 def connect_db():
-    return psycopg2.connect("<SERVICE_URI>")
+    return psycopg2.connect("postgres://avnadmin:AVNS_F9QTOJet-vzalfnV2-T@pg-9c3cfe6-menuka-1.h.aivencloud.com:21721/defaultdb?sslmode=require")
 
 def initialize_database():
     """Create the required table if it doesn't exist and handle migration if needed"""
