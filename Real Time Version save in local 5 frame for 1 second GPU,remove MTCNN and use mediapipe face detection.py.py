@@ -8,6 +8,7 @@ import torch
 from torchvision import transforms
 import time
 import mediapipe as mp
+from facenet_pytorch import InceptionResnetV1  # Added this import
 
 # JSON file path
 JSON_DB_PATH = "face_records.json"
@@ -210,7 +211,6 @@ def calculate_similarity(embedding1, embedding2):
     emb2 = emb2 / np.linalg.norm(emb2)
     return np.dot(emb1, emb2)
 
-# Rest of the functions remain largely unchanged
 def register_face(face_processor):
     user_id = input("Enter ID number: ")
     
@@ -229,7 +229,7 @@ def register_face(face_processor):
             img = cv2.imread(img_path)
             faces = face_processor.detect_faces(img)
             if faces:
-                face = faces[0]  # Take first detected face
+                face = faces[0]
                 face_region = img[face['box'][1]:face['box'][3], face['box'][0]:face['box'][2]]
                 embedding = face_processor.get_face_embedding(face_region)
                 if embedding is not None:
@@ -325,7 +325,7 @@ def recognize_face(face_processor):
                 print("No face detected in the image!")
                 return
             
-            face = faces[0]  # Take first detected face
+            face = faces[0]
             face_region = img[face['box'][1]:face['box'][3], face['box'][0]:face['box'][2]]
             current_embedding = face_processor.get_face_embedding(face_region)
             
